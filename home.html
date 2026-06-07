@@ -70,27 +70,47 @@
         .logo {
             font-size: 26px;
             font-weight: 800;
-            color: #667eea;
+            color: #ff00c8;
             text-decoration: none;
             display: flex;
             align-items: center;
             gap: 8px;
         }
-
-        .nav-links {
-            list-style: none;
+        .nav-links {   
+            list-style: none;  
             display: flex;
-            gap: 30px;
+            gap: 10px;
+            background: #f8f9ff;
+            padding: 8px;  
+            border-radius: 50px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
         .nav-links li a {
+    
             text-decoration: none;
+    
             color: #7f8c8d;
+    
             font-weight: 700;
-            transition: color 0.3s;
+
+    
+            padding: 10px 20px;
+    
+            border-radius: 30px;
+    
+            transition: all 0.3s ease;
+
         }
 
-        .nav-links li a:hover { color: #667eea; }
+
+        .nav-links li a:hover {
+    
+            background: linear-gradient(135deg, #f200ff 0%, #00bbff 100%);
+    
+            color: white;
+
+        }
+
 
         .auth-buttons {
             display: flex;
@@ -132,7 +152,7 @@
             padding: 10px 24px;
             border-radius: 25px;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f70090 0%, #0011ff 100%);
             color: white;
             transition: 0.3s;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
@@ -142,7 +162,7 @@
         /* --- Phần Giới thiệu (Hero Section) --- */
         .hero {
             position: relative;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: url('static/image/anh.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 100px 20px 150px 20px; /* Padding dưới to để chứa sóng */
@@ -269,8 +289,8 @@
 
         /* --- Chân trang --- */
         footer {
-            background-color: #2c3e50;
-            color: #bdc3c7;
+            background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+            color: #f6ff00;
             text-align: center;
             padding: 30px 0;
             font-weight: 600;
@@ -306,7 +326,6 @@
             <ul class="nav-links">
                 <li><a href="/">Trang chủ</a></li>
                 <li><a href="/review">Sổ Tay Từ Khó</a></li>
-                <li><a href="#">Bảng xếp hạng</a></li>
             </ul>
 
             <div class="auth-buttons">
@@ -379,7 +398,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Pro Flashcard - Phát triển với ❤️</p>
+        <p>&copy; Flashcard phát triển bởi nhóm Hai, Hiep, Tu</p>
     </footer>
 
 </body>
